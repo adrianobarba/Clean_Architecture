@@ -60,7 +60,20 @@ public class Usuario {
         return email;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                ", nascimento=" + nascimento +
+                ", email='" + email + '\'' +
+                ", endereco=" + endereco +
+                '}';
+    }
+
     public void setEmail(String email) {
         this.email = email;
+
+
     }
 }
